@@ -1,9 +1,10 @@
 #Python Pi#
-A simple python app to generate Pi (using Sympy) with a defined number of decimals. It can be displayed on screen or saved as a text or json file.
+A simple python script to generate Pi with a defined number of decimals (excluding the leading 3.xxxx). It can be displayed on screen or saved as a text or json file.
 
 ##Instructions##
 
 ###Prerequisites###
+The script requires Sympy to calculate the Pi
 
 Install Sympy using pip
 ```
@@ -17,6 +18,7 @@ or install manually (Refer to [Sympy website](http://www.sympy.org/))
 Display on screen
 ```
 python pi.py 10
+>> 3.1415926536
 ```
 
 Saves to a text file
