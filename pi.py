@@ -3,9 +3,9 @@ import argparse
 
 def main():
     isJSON = false
-    parser = argparse.ArgumentParser(description='Outputs Pi with decimals on screen or saved as text/json file')
+    parser = argparse.ArgumentParser(description='Outputs Pi with defined number of decimals on screen or saves as a text or json format file')
     parser.add_argument('length', metavar='length', type=int,help='Total decimals (excluding the leading 3.xxx)')
-    parser.add_argument('--file', '-file', default = False, metavar='path/to/file.txt', type=str, help='saves results into a text file')
+    parser.add_argument('--file', '-file', default = False, metavar='path/to/file.txt', type=str, help='saves result to a text file')
     parser.add_argument('--json', '-json', action='store_true', help='saves as json format')
     args = parser.parse_args()
     
@@ -13,7 +13,7 @@ def main():
     if args.json: isJSON = True
     
     if args.file == False:
-        #Output pi on screem
+        #Output pi on screen
         print pi.evalf(args.length + 1)
     else:
         #Saves to a file
