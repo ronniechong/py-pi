@@ -11,7 +11,7 @@ Install Sympy using pip
 sudo pip install sympy
 ```
 
-or install manually (Refer to [Sympy website](http://www.sympy.org/))
+or install manually (refer to [Sympy website](http://www.sympy.org/))
 
 ###Running pi.py###
 
@@ -29,7 +29,8 @@ python pi.py 10 --file path/to/file.txt
 ##Parameters##
 | Arguments     | Description   |
 | :------------- |:------------- |
-|`-h or --h`      | Help          |
-|`-file or --file`| Saves to a file|
-|`-json or -json` | Saves as a JSON format|
+|`-h or --help`      | Help          |
+|`-f or --file`| Saves to a file|
+|`-j or --json` | Saves as a JSON format|
+|`-v or --verbose` | Verbose mode|
 
