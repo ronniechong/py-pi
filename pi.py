@@ -1,6 +1,5 @@
 from sympy import *
-import argparse
-import time
+import argparse, time, json
 
 def main():
     isJSON = false
@@ -35,13 +34,13 @@ def main():
 
     if isVerbose:  print 'Done in', time.clock() - timeStart, 'seconds'
 
-def saveFile(filename, length, json):
+def saveFile(filename, length, isJson):
     print 'Writing Pi to', filename
-    pre = '{pi:'
-    post = '}'
+
     f = open(filename,'w')
-    if json:
-        f.write(pre + str(pi.evalf(length)) + post)
+    
+    if isJson:
+        json.dump({'pi':str(pi.evalf(length))},f,indent=4)
     else:
         f.write(str(pi.evalf(length)))
     
