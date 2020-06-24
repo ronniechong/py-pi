@@ -8,7 +8,7 @@ The script requires Sympy to calculate the Pi
 
 Install Sympy using pip
 ```
-sudo pip install sympy
+pip install sympy
 ```
 
 or install manually (refer to [Sympy website](http://www.sympy.org/))
